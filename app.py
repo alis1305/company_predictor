@@ -13,7 +13,7 @@ def main():
 #company = st.text_input("Company Name")
     
 # Get user input for industry using selectbox
-    industry = st.selectbox("Industry",("Fintech", "Web3", "E-commerce", "Consumer Others","EdTech","ESG","Enterprise SaaS","Others"))
+    industry = st.selectbox("Industry",("Consumer E-commerce", "Consumer Others", "EdTech","Enterprise SaaS","ESG","Fintech", "Web3", "Others"))
 # Initialize all variables to 0
     fintech = web3 = ecommerce = consumer_others = edtech = esg = enterprise_saas = others = 0
 # Set the corresponding variable to 1 based on industry choice
@@ -21,7 +21,7 @@ def main():
         fintech = 1
     elif industry == "Web3":
         web3 = 1
-    elif industry == "E-commerce":
+    elif industry == "Consumer E-commerce":
         ecommerce = 1
     elif industry == "Consumer Others":
         consumer_others = 1
